@@ -1,0 +1,26 @@
+{
+  "name": "github-actions-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sonar-projects.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --coverage --verbose --runInBand --forceExit --detectOpenHandles",
+    "sonar-scan": "node sonar-project.js",
+    "sonar-verify": "sonarqube-verify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.2",
+    "jest": "^27.5.0",
+    "sonarqube-scanner": "^2.9.0",
+    "sonarqube-verify": "^1.0.2"
+  }
+}
